@@ -1,0 +1,37 @@
+# Kararlar (ADR)
+
+> **EN:** Architecture/organisation decision records for Greater Türkiye. Written in Turkish; each file starts with a one-line English summary. Propose a new one by PR using the template.
+
+Bu klasör, topluluğun **mimari ve örgütsel kararlarını** (Architecture Decision Records, ADR) içerir. Her karar; bağlamı, verilen kararı, sonuçlarını ve değerlendirilen alternatifleri kısa ve kalıcı biçimde kaydeder. Amaç, "bunu neden böyle yaptık?" sorusunun cevabının bir yerde yazılı olmasıdır.
+
+## Dizin
+
+| No | Başlık | Durum | Tarih |
+|---|---|---|---|
+| [0000](0000-template.md) | Şablon | — | — |
+| [0001](0001-repository-boundaries.md) | Depo sınırları | Kabul edildi | 2026-09-12 |
+| [0002](0002-git-as-source-of-truth.md) | Tek doğruluk kaynağı olarak git | Kabul edildi | 2026-09-12 |
+| [0003](0003-identifiers.md) | Tanımlayıcılar | Kabul edildi | 2026-09-12 |
+| [0004](0004-schema-versioning.md) | Şema sürümleme | Kabul edildi | 2026-09-12 |
+| [0005](0005-controlled-vocabularies.md) | Kontrollü sözlükler | Kabul edildi | 2026-09-12 |
+| [0006](0006-verification-scale.md) | Doğrulama ölçeği | Kabul edildi | 2026-09-12 |
+| [0007](0007-human-in-the-loop-publishing.md) | İnsan onaylı yayın | Kabul edildi | 2026-09-12 |
+| [0008](0008-zero-budget-infrastructure.md) | Sıfır bütçe altyapı | Kabul edildi | 2026-09-12 |
+| [0009](0009-licensing.md) | Lisanslama | Kabul edildi | 2026-09-12 |
+| [0010](0010-content-safety-gates.md) | İçerik güvenliği kapıları | Kabul edildi | 2026-09-12 |
+| [0011](0011-threat-model.md) | Tehdit modeli | Kabul edildi | 2026-09-12 |
+| [0012](0012-governance.md) | Yönetişim | Kabul edildi | 2026-09-12 |
+
+## Yeni bir ADR nasıl önerilir?
+
+1. [`0000-template.md`](0000-template.md) dosyasını kopyalayın; bir sonraki boş numarayı ve kısa, İngilizce ASCII kebab-case bir ad verin: `NNNN-kisa-ad.md`.
+2. Durumu **Önerildi** olarak yazın. Bağlamı, kararı, sonuçları ve alternatifleri doldurun. En üste tek satırlık İngilizce özet ekleyin.
+3. Bu depoya bir PR açın; yukarıdaki dizine satır ekleyin.
+4. Tartışma PR üzerinde yürür. Bakımcılar oydaşmayla karar verir ([0012](0012-governance.md)); kabul edilirse durum **Kabul edildi** ve tarih birleştirme günü olur.
+5. Gizli bilgi, kişisel veri veya güvenlik açığı içeren konular PR'da değil, [SECURITY.md](https://github.com/Greater-Turkiye/.github/blob/main/SECURITY.md) kanalıyla önce bakımcılara iletilir.
+
+## Kurallar
+
+- Kabul edilmiş bir ADR **düzenlenmez** (yazım hatası hariç). Karar değişirse yeni bir ADR yazılır; eskisinin durumu **"Yerine geçildi: NNNN"** olarak güncellenir.
+- Durum değerleri: `Önerildi` · `Kabul edildi` · `Reddedildi` · `Kullanımdan kalktı` · `Yerine geçildi: NNNN`.
+- "Temel değişiklikler" (depo yapısı, veri modeli, doğrulama kuralları, kırmızı çizgiler, lisans, yönetişim, altyapı maliyeti) **mutlaka** ADR gerektirir.
