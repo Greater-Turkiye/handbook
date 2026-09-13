@@ -24,6 +24,7 @@ Bu depo topluluğun kurallarını, yöntemlerini ve kararlarını içerir. **Tü
 | 08 | [Yazım Kılavuzu](tr/08-style-guide.md) | Kayıt ve paylaşım yazımı, düzeltmeler |
 | 09 | [Sözlük](tr/09-glossary.md) | OSINT ve savunma terimleri |
 | 10 | [Katkı Rehberi](tr/10-contributing.md) | Adım adım katkı, roller ve terfi yolu |
+| 11 | [Araçlar](tr/11-tools.md) | Ücretsiz ve yasal OSINT araçları, koşulları, OPSEC notları |
 
 ### Kararlar (ADR)
 
@@ -81,6 +82,7 @@ This repository holds the community's rules, methods and decisions. **Turkish pa
 | 08 | [Style Guide](en/08-style-guide.md) | Writing records and posts, corrections |
 | 09 | [Glossary](en/09-glossary.md) | OSINT and defence terms |
 | 10 | [Contributing](en/10-contributing.md) | Step-by-step contributing, roles and promotion |
+| 11 | [Tools](en/11-tools.md) | Free, legal OSINT tools, their terms and OPSEC notes |
 
 ### Decisions (ADRs)
 

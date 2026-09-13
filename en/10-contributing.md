@@ -97,6 +97,6 @@ Rules:
 
 ## Other ways to contribute
 
-- **Handbook**: open a PR on this repository. The Turkish page is canonical; if you change the Turkish, update the English translation too or open an issue.
+- **Handbook**: open a PR on this repository. The Turkish page is canonical; if you change the Turkish, update the English translation too or open an issue. The **translation drift check** in CI (`Translation drift`) warns when a Turkish page has changed after its English mirror. It fails if an English page lacks the `> translation_of: tr/<file>.md` header, if that header points to a page that doesn't exist, or if a Turkish page has no English mirror.
 - **Code** (`platform`): a separate contributing guide will live in that repository.
 - **Proposing a decision**: via a new ADR ([decisions/README.md](../decisions/README.md)).
