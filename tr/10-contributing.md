@@ -95,6 +95,6 @@ Kurallar:
 
 ## Diğer katkı yolları
 
-- **El kitabı**: Bu depoya PR açarak. Türkçe sayfa esastır; Türkçeyi değiştirirseniz İngilizce çeviriyi de güncelleyin veya bir sorun kaydı açın.
+- **El kitabı**: Bu depoya PR açarak. Türkçe sayfa esastır; Türkçeyi değiştirirseniz İngilizce çeviriyi de güncelleyin veya bir sorun kaydı açın. CI'daki **çeviri sapması kontrolü** (`Translation drift`), Türkçe sayfası İngilizcesinden sonra değişen sayfalar için uyarı verir. Bir İngilizce sayfada `> translation_of: tr/<dosya>.md` başlığı eksikse, başlık var olmayan bir sayfayı gösteriyorsa veya bir Türkçe sayfanın İngilizce aynası yoksa başarısız olur.
 - **Kod** (`platform`): Ayrı bir katkı rehberi o depoda yer alacaktır.
 - **Karar önerisi**: Yeni bir ADR ile ([decisions/README.md](../decisions/README.md)).
