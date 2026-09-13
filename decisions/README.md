@@ -22,7 +22,8 @@ Bu klasör, topluluğun **mimari ve örgütsel kararlarını** (Architecture Dec
 | [0011](0011-threat-model.md) | Tehdit modeli | Kabul edildi | 2026-09-12 |
 | [0012](0012-governance.md) | Yönetişim | Kabul edildi | 2026-09-12 |
 | [0013](0013-map-layers-turkiye-perspective.md) | Harita katmanları: Türkiye perspektifi | Kabul edildi | 2026-09-13 |
-| [0014](0014-occupied-territory-and-human-rights-markers.md) | Harita: işgal altındaki topraklar, insan hakları işaretleri, tampon bölgeler | Kabul edildi | 2026-09-13 |
+| [0014](0014-occupied-territory-and-human-rights-markers.md) | Harita: işgal altındaki topraklar, insan hakları işaretleri, tampon bölgeler | Kabul edildi (§3 yerine geçildi: 0015) | 2026-09-13 |
+| [0015](0015-announced-operation-areas.md) | Harita: Türkiye'nin resmî olarak ilan ettiği harekât bölgeleri | Kabul edildi | 2026-09-13 |
 
 ## Yeni bir ADR nasıl önerilir?
 

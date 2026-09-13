@@ -18,6 +18,7 @@ Türk Silahlı Kuvvetleri, Jandarma, Sahil Güvenlik, Emniyet, MİT ve diğer T�
   - olaydan **en az 24 saat sonra**,
   - `policy.sensitivity: elevated` ile,
   - bir bakımcının `policy:approved` etiketiyle yayımlanabilir.
+- **Harita katmanı istisnası:** Türk devletinin resmî olarak ilan ettiği harekât bölgeleri, **bölgenin tamamı olarak** haritada gösterilebilir. Üs, karakol, birlik ve hareket bilgisi yine gösterilmez ([ADR 0015](../decisions/0015-announced-operation-areas.md)).
 - Bu kurallar CI'daki **"Türk kuvvetleri kapısı"** tarafından da uygulanır: Türk askerî/güvenlik/istihbarat aktörü `perpetrator`, `participant`, `target` veya `host` rolüyle kayıttaysa ya da `policy.involves_tur_forces: true` ise yukarıdaki koşullar sağlanmadan kayıt birleştirilemez.
 - Resmî olmayan görüntüler (sosyal medyada paylaşılan konvoy videoları, tatbikat fotoğrafları, "şu an şuradan geçiyorlar" paylaşımları) **kamuya açık olsa bile kullanılmaz**, bağlantısı verilmez, geolokasyonu yapılmaz.
 - Türk askerî uçaklarının ADS-B, gemilerinin AIS verisi **izlenmez, kaydedilmez, paylaşılmaz.**

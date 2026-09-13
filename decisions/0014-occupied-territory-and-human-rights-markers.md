@@ -2,7 +2,7 @@
 
 > **EN:** Extends 0013: territory Türkiye regards as occupied (Palestine on 1967 lines incl. Gaza, Golan, Crimea) is drawn hatched with its de jure state and a sourced note; human-rights markers (East Turkestan) outline a region with sources and are explicitly not boundary claims; zones controlled by Turkish forces (e.g., in Syria or Iraq) are never drawn — presence stays at country level only.
 
-- **Durum:** Kabul edildi
+- **Durum:** Kabul edildi · §3 yerine geçildi: [0015](0015-announced-operation-areas.md)
 - **Tarih:** 2026-09-13
 
 ## Bağlam

@@ -20,6 +20,7 @@ Nothing is published, collected or analysed about the **positions, movements, de
   - **at least 24 hours** after the event,
   - with `policy.sensitivity: elevated`,
   - with a maintainer's `policy:approved` label.
+- **Map layer exception:** operation areas officially announced by the Turkish state may be shown on the map **as whole areas**. Bases, posts, units and movements are still never shown ([ADR 0015](../decisions/0015-announced-operation-areas.md)).
 - These rules are also enforced by the **"Turkish forces gate"** in CI: if a Turkish military/security/intelligence actor appears with role `perpetrator`, `participant`, `target` or `host`, or `policy.involves_tur_forces: true`, the record cannot be merged unless the conditions above are met.
 - Unofficial imagery (convoy videos on social media, exercise photos, "they're passing through here right now" posts) is **not used, linked or geolocated, even if public.**
 - ADS-B data of Turkish military aircraft and AIS data of Turkish naval vessels is **not tracked, recorded or shared.**
