@@ -21,6 +21,7 @@ Bu klasör, topluluğun **mimari ve örgütsel kararlarını** (Architecture Dec
 | [0010](0010-content-safety-gates.md) | İçerik güvenliği kapıları | Kabul edildi | 2026-09-12 |
 | [0011](0011-threat-model.md) | Tehdit modeli | Kabul edildi | 2026-09-12 |
 | [0012](0012-governance.md) | Yönetişim | Kabul edildi | 2026-09-12 |
+| [0013](0013-map-layers-turkiye-perspective.md) | Harita katmanları: Türkiye perspektifi | Kabul edildi | 2026-09-13 |
 
 ## Yeni bir ADR nasıl önerilir?
 
