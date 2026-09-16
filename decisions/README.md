@@ -16,7 +16,7 @@ Bu klasör, topluluğun **mimari ve örgütsel kararlarını** (Architecture Dec
 | [0005](0005-controlled-vocabularies.md) | Kontrollü sözlükler | Kabul edildi | 2026-09-12 |
 | [0006](0006-verification-scale.md) | Doğrulama ölçeği | Kabul edildi | 2026-09-12 |
 | [0007](0007-human-in-the-loop-publishing.md) | İnsan onaylı yayın | Kabul edildi | 2026-09-12 |
-| [0008](0008-zero-budget-infrastructure.md) | Sıfır bütçe altyapı | Kabul edildi | 2026-09-12 |
+| [0008](0008-zero-budget-infrastructure.md) | Sıfır bütçe altyapı | Kabul edildi (toplayıcı tetikleyicisi: 0016) | 2026-09-12 |
 | [0009](0009-licensing.md) | Lisanslama | Kabul edildi | 2026-09-12 |
 | [0010](0010-content-safety-gates.md) | İçerik güvenliği kapıları | Kabul edildi | 2026-09-12 |
 | [0011](0011-threat-model.md) | Tehdit modeli | Kabul edildi | 2026-09-12 |
@@ -24,6 +24,7 @@ Bu klasör, topluluğun **mimari ve örgütsel kararlarını** (Architecture Dec
 | [0013](0013-map-layers-turkiye-perspective.md) | Harita katmanları: Türkiye perspektifi | Kabul edildi | 2026-09-13 |
 | [0014](0014-occupied-territory-and-human-rights-markers.md) | Harita: işgal altındaki topraklar, insan hakları işaretleri, tampon bölgeler | Kabul edildi (§3 yerine geçildi: 0015) | 2026-09-13 |
 | [0015](0015-announced-operation-areas.md) | Harita: Türkiye'nin resmî olarak ilan ettiği harekât bölgeleri | Kabul edildi | 2026-09-13 |
+| [0016](0016-collector-schedule-until-worker.md) | Toplayıcılar: Worker gelene kadar GitHub Actions `schedule:` | Kabul edildi | 2026-09-16 |
 
 ## Yeni bir ADR nasıl önerilir?
 
