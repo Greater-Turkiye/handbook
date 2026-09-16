@@ -91,3 +91,8 @@ Architecture and organisation decisions live in [`decisions/`](decisions/README.
 ### Licence
 
 Handbook content is licensed under [CC BY 4.0](LICENSE). Opening a pull request means you agree to publish your contribution under the same licence.
+
+## Depo kurallari / Repository rules
+
+Yapay zeka araclari ve yeni katkicilar icin kisa calisma kurallari: [CLAUDE.md](CLAUDE.md). Bu kurallarin ilki, her degisiklikte README dosyasini ayni PR icinde guncel tutmaktir.
+Short working rules for AI agents and new contributors: [CLAUDE.md](CLAUDE.md). The first of them is keeping the README true in the same pull request as the change.
