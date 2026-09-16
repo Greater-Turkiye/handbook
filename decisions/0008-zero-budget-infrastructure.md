@@ -2,7 +2,7 @@
 
 > **EN:** We run only on free tiers with no payment method on any account, so limits are hard caps: GitHub Actions (Worker-triggered `workflow_dispatch`, not `schedule:`), Cloudflare Workers/Queues/D1 (D1 is the operational DB), optional GitHub Models, free social APIs; X is manual; R2 and Supabase are avoided; usage is tracked in a ledger.
 
-- **Durum:** Kabul edildi
+- **Durum:** Kabul edildi · toplayıcı tetikleyicisi değiştirildi: [0016](0016-collector-schedule-until-worker.md)
 - **Tarih:** 2026-09-12
 
 ## Bağlam
