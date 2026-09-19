@@ -50,6 +50,7 @@ Karolar erişilemezse panel altlığı düşürür ve haritayı depodaki 50m dos
 ## Sonuçlar
 
 - Harita, kayıtların geçtiği coğrafyayı gösterebilecek derinliğe kavuşur; panelin zum aralığı 16×'ten 192×'e açılır.
+- İlk açılışın ağırlığı değişmez: altlık ilk zumla gelir, yani "harita derinleşti" ile "sayfa yavaşladı" birlikte olmaz.
 - Ziyaretçi verisi üçüncü taraf harita servisine gitmez.
 - Maliyet sıfır kalır, ama iki tavan izlenmelidir: Workers ücretsiz katmanında günde 100k istek ve sürüm varlığı başına 2 GB.
 - Yenilemenin elle olması, altlığın eskimesi anlamına gelebilir; OSM verisinin tarihi TileJSON'da ve `apps/tiles/README.md` içinde yazılıdır, böylece "ne kadar eski" sorusu ölçülebilir kalır.
