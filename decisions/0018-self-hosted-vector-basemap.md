@@ -1,6 +1,6 @@
 # 0018 · Vektör altlık: karoları kendimiz üretir, kendimiz sunarız
 
-> **EN:** The dashboard's basemap is ours: an OpenStreetMap extract of the panel's region (z0–11), cut with go-pmtiles from the Protomaps planet build, published as a release asset and served by the `gt-tiles` Worker. It is on by default; no visitor request goes to a third-party map service. Boundary and country-name layers are dropped from the style before the map is created (0013 stands): the basemap carries geography, we carry meaning. The archive lives in a release asset only because R2 is not enabled on the account; moving it there is a binding and one line, and needs no new decision.
+> **EN:** The dashboard's basemap is ours: an OpenStreetMap extract of the panel's region (z0–11), cut with go-pmtiles from the Protomaps planet build, published as a release asset and served by the `gt-tiles` Worker. It is on by default but loaded on the first zoom, so a first load weighs what it did before (measured: 1,764 KB on a phone either way), and a Save-Data browser gets none of it. No visitor request goes to a third-party map service. Boundary and country-name layers are dropped from the style before the map is created (0013 stands): the basemap carries geography, we carry meaning. The archive lives in a release asset only because R2 is not enabled on the account; moving it there is a binding and one line, and needs no new decision.
 
 - **Durum:** Kabul edildi
 - **Tarih:** 2026-09-19
@@ -21,9 +21,13 @@ Panel bugüne kadar haritayı yalnızca depoda duran 1:50m Natural Earth dosyas�
 
 ## Karar
 
-### 1. Altlık bizimdir ve varsayılan açıktır
+### 1. Altlık bizimdir, varsayılan açıktır, ama **ilk zumda** yüklenir
 
 Panel, haritayı kendi ürettiğimiz vektör karolar üzerine çizer. Karolar `gt-tiles` Cloudflare Worker'ından gelir ([`platform/apps/tiles`](https://github.com/Greater-Turkiye/platform/tree/main/apps/tiles)); ziyaretçinin hiçbir harita isteği üçüncü tarafa gitmez. `?basemap=0` altlığı kapatır, `?basemap=ofm` karşılaştırma için OpenFreeMap'i açar.
+
+Genel görünümde altlık **yüklenmez.** MapLibre (~260 KB sıkıştırılmış) ve karolar (telefon ekranında z6'da ~370 KB) yalnızca harita gerçekten yakınlaştırıldığında (k ≥ 1,6) istenir; ilk açılış, altlık hiç yokmuş gibi ağırdadır (ölçüldü: telefonda 1.764 KB — altlığın kapalı olduğu haldeki değerin aynısı). Gerekçe: genel görünümde bölgenin tamamı ekrandadır, anlamı tematik katmanlar taşır ve altındaki ayrıntı bir bakışta okunup atılır. Tarayıcı "veriden tasarruf" (`Save-Data`) istiyorsa altlık hiç yüklenmez; `?basemap=gt` bunu geçersiz kılar.
+
+Aynı gerekçe karo biçimini de belirler: karo `application/x-protobuf` olarak sunulur, çünkü Cloudflare bu türü sıkıştırır — z6'da 3×3 görünüm 524 KB yerine 370 KB'dır.
 
 ### 2. Anlam bizde kalır — 0013 aynen geçerlidir
 
