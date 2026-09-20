@@ -28,6 +28,7 @@ Bu klasör, topluluğun **mimari ve örgütsel kararlarını** (Architecture Dec
 | [0017](0017-osint-ai-repository.md) | `osint-ai` deposu ve görüntü yapay zekâsı kuralları | Önerildi | 2026-09-18 |
 | [0018](0018-self-hosted-vector-basemap.md) | Vektör altlık: karoları kendimiz üretir, kendimiz sunarız | Kabul edildi | 2026-09-19 |
 | [0019](0019-foreign-installations-register.md) | Yabancı askerî tesis sicili: antlaşma çerçevesi, kanıt standardı ve dışlamalar | Kabul edildi | 2026-09-19 |
+| [0020](0020-site-on-cloudflare-alongside-pages.md) | Site: Cloudflare Worker'ından da sunulur, GitHub Pages kanonik kalır | Kabul edildi | 2026-09-20 |
 
 ## Yeni bir ADR nasıl önerilir?
 
