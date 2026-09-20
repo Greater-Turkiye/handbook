@@ -2,7 +2,7 @@
 
 > **EN:** Opens a register of foreign military installations, starting with the Aegean islands that the 1923 Treaty of Lausanne (Art. 13) and the 1947 Treaty of Paris (Art. 14) place under a demilitarised regime. Every entry is anchored to a treaty article and to sources, and answers one question: what is there, since when, and which obligation does it bear on. It is a compliance register, not a target list — so it carries no real-time movements, no personnel, no vulnerability or aimpoint analysis, no field collection, and no commercial imagery we may not redistribute. Coordinates are deliberately left empty until each one is verified against a primary source, and the register ships with no map geometry until then. The asymmetry is deliberate and permanent: we document other states' treaty obligations, never the positions of Turkish forces (0013 §red lines stand).
 
-- **Durum:** Kabul edildi
+- **Durum:** Kabul edildi (§3 yerine geçildi: [0021](0021-coordinates-with-provenance.md))
 - **Tarih:** 2026-09-19
 - **Önerenler:** @nukIeer
 - **İlgili:** [0006](0006-verification-scale.md), [0007](0007-human-in-the-loop-publishing.md), [0009](0009-licensing.md), [0010](0010-content-safety-gates.md), [0011](0011-threat-model.md), [0013](0013-map-layers-turkiye-perspective.md), [0014](0014-occupied-territory-and-human-rights-markers.md)
@@ -42,6 +42,8 @@ Her kayıt şu soruları yanıtlar: **ne var, ne zamandan beri var, hangi antla�
 - **Tarih, koordinattan önemlidir.** Sicilin gücü "şu noktada şu var" değil, "1947'de olmaması gereken yerde 19XX'ten beri var" diyebilmektir; bu yüzden ilk görülme ve değişim tarihleri zorunlu alan gibi ele alınır.
 
 ### 3. Koordinatlar ve harita
+
+> **Bu bölümün yerine [0021](0021-coordinates-with-provenance.md) geçmiştir (2026-09-20).** Koordinat artık açık kaynak verdiği her yerde, `method`, `precision`, `uncertainty_m` ve kaynağıyla birlikte kaydedilir. Aşağıdaki metin, kararın o tarihteki hâli olarak bırakılmıştır. §4 dışlamaları ve ADR'nin geri kalanı aynen yürürlüktedir.
 
 - **Koordinat, kaynağıyla doğrulanmadan yazılmaz.** Doğrulanmamış koordinat, kaydın geri kalanı doğru olsa bile sicili çürütülebilir kılar.
 - Bu nedenle sicil **ilk sürümünde koordinatsızdır**: `location.precision` ada/idari birim düzeyinde kalır, `geometry` yoktur, dolayısıyla panelde hiçbir işaret çizilmez. Kayıtların geri kalanı (ad, tür, antlaşma maddesi, tarih, kanıt) doldurulur.
