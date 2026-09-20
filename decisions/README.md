@@ -26,6 +26,7 @@ Bu klasör, topluluğun **mimari ve örgütsel kararlarını** (Architecture Dec
 | [0015](0015-announced-operation-areas.md) | Harita: Türkiye'nin resmî olarak ilan ettiği harekât bölgeleri | Kabul edildi | 2026-09-13 |
 | [0016](0016-collector-schedule-until-worker.md) | Toplayıcılar: Worker gelene kadar GitHub Actions `schedule:` | Kabul edildi | 2026-09-16 |
 | [0017](0017-osint-ai-repository.md) | `osint-ai` deposu ve görüntü yapay zekâsı kuralları | Önerildi | 2026-09-18 |
+| [0018](0018-self-hosted-vector-basemap.md) | Vektör altlık: karoları kendimiz üretir, kendimiz sunarız | Kabul edildi | 2026-09-19 |
 
 ## Yeni bir ADR nasıl önerilir?
 
