@@ -25,7 +25,12 @@ Written for AI agents and for anyone new to the repository. This repository is t
 ## 4. Git and pull requests
 
 - Never commit to `main`; `main` is protected. Work on a branch and squash-merge a pull request.
-- Commit messages and PR bodies are in English and end with the attribution lines used across this org.
+- Commit messages and PR bodies are in English and describe why.
+- **No tool advertising anywhere in the repository.** No "Generated with", no `Co-Authored-By` for
+  an assistant, no bot signature, in commit messages, pull request bodies, review comments, issue
+  comments or code comments. The work is the project's; which editor or model produced a line is
+  not a fact about the project and does not belong in its history. A comment explains the code, not
+  who wrote it.
 
 ## 5. Closing a task
 
