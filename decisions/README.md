@@ -31,6 +31,7 @@ Bu klasör, topluluğun **mimari ve örgütsel kararlarını** (Architecture Dec
 | [0020](0020-site-on-cloudflare-alongside-pages.md) | Site: Cloudflare Worker'ından da sunulur, GitHub Pages kanonik kalır | Kabul edildi | 2026-09-20 |
 | [0021](0021-coordinates-with-provenance.md) | Koordinat, kaynağı ve hata payıyla birlikte kaydedilir | Kabul edildi | 2026-09-20 |
 | [0022](0022-trade-compliance-not-vessel-tracking.md) | Ticaret uyumu izlenir, sivil gemi takip edilmez | Kabul edildi | 2026-09-20 |
+| [0023](0023-automatic-unverified-records.md) | Doğrulanmamış kayıtların otomatik yayını | Kabul edildi | 2026-09-24 |
 
 ## Yeni bir ADR nasıl önerilir?
 
