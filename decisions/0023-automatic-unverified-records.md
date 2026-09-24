@@ -1,6 +1,6 @@
 # 0023 · Doğrulanmamış kayıtların otomatik yayını
 
-> **EN:** Amends [0007](0007-human-in-the-loop-publishing.md) for one class of records. Candidates that pass the collector's relevance filter and its safety gates are written to `datasets` as event records automatically, with no person reading them first. They are published as what they are: `assessment.status: unverified`, `credibility: 6` ("cannot be judged"), a bilingual note saying no one reviewed them, machine-written title and summary marked in `i18n.machine`, and the tag `otomatik`. Verification comes later, as a separate pass over that tag. Everything 0007 guards that is not volume stays guarded: nothing about Turkish forces is published automatically, sources graded E or F never feed it, the content-policy validator runs on every record, and a single repository variable stops it.
+> **EN:** Amends [0007](0007-human-in-the-loop-publishing.md) for one class of records. Candidates that pass the collector's relevance filter and its safety gates are written to `datasets` as event records automatically, with no person reading them first. They are published as what they are: `assessment.status: unverified`, `credibility: 6` ("cannot be judged"), a bilingual note saying no one reviewed them, machine-written title and summary marked in `i18n.machine`, and the tag `otomatik`. Verification comes later, as a separate pass over that tag. The records live on an `auto-data` branch that the site build lays over `main`, so `main` stays the human-reviewed record. Everything 0007 guards that is not volume stays guarded: nothing about Turkish forces is published automatically, sources graded E or F never feed it, the content-policy validator runs on every record, and a single repository variable stops it.
 
 - **Durum:** Kabul edildi
 - **Tarih:** 2026-09-24
@@ -30,7 +30,7 @@ partilerini okur ve:
    analiz, yorum, özet, röportaj mı olduğuna karar verir, (b) türü sözlükten seçer, (c) aynı günün aynı
    bölgesindeki tekrar haberleri işaretler ve (d) Türkçe ve İngilizce başlık ve özet yazar. Olay
    olmayanlar kayda dönüşmez; tekrarlar tek kayda birden çok kaynak olarak girer.
-3. Kaydı yazar, `gt.py validate` ile doğrular, geçmeyeni siler, geçenleri doğrudan `main`'e işler.
+3. Kaydı yazar, `gt.py validate` ile doğrular, geçmeyeni siler, geçenleri **`auto-data`** dalına işler.
 
 ### Kayıt ne olduğunu söyler
 
@@ -60,12 +60,16 @@ cümleleriyle, kaynağa atfedilerek ("…'a göre") yazılır; kaynağın kendi 
 - **Acil durdurma.** `datasets` deposunun `AUTO_RECORDS` değişkeni `on` değilse iş hiçbir şey yazmaz.
   Bir bakımcı onu `off` yapınca otomatik yayın durur ([0007](0007-human-in-the-loop-publishing.md)).
 
-### `main`'e doğrudan yazma
+### `main` insan incelemeli kalır
 
-Kuruluş ayarları GitHub Actions'ın çekme isteği açmasına izin vermiyor. Bu yüzden `main` kural
-setine yalnızca GitHub Actions uygulaması için bir atlama (bypass) eklendi. İş `validate`'i kendisi
-çalıştırır ve geçmeyen dosyayı yazmaz. Çatallardan (fork) gelen çekme isteklerinin belirteci
-salt okunurdur; atlama onlara yetki vermez.
+Otomatik kayıtlar `main`'e değil, korumasız **`auto-data`** dalına yazılır; iş her çalıştırmada bu dalı
+`main` ile günceller (çakışmada `main` kazanır). Pages derlemesi `main`'in üstüne yalnızca `auto-data`'da olup
+`main`'de olmayan kayıt dosyalarını koyar, bütünü doğrular ve derler. Site ikisini birlikte gösterir; bir kayıt
+doğrulanıp PR ile `main`'e taşındığında derleme onu `main`'den okur.
+
+Kuruluş ayarları GitHub Actions'ın ve dağıtım anahtarlarının `main` kural setini atlamasına izin vermiyor;
+atlama için kimlik bilgisi eklemek yerine bu ayrım seçildi. Bunun bir yararı da var: `main`'in "bir insanın
+okuduğu kayıtlar" anlamı değişmez.
 
 ## Sonuçlar
 
