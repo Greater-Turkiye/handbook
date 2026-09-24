@@ -33,6 +33,7 @@ Bu klasör, topluluğun **mimari ve örgütsel kararlarını** (Architecture Dec
 | [0022](0022-trade-compliance-not-vessel-tracking.md) | Ticaret uyumu izlenir, sivil gemi takip edilmez | Kabul edildi | 2026-09-20 |
 | [0023](0023-automatic-unverified-records.md) | Doğrulanmamış kayıtların otomatik yayını | Kabul edildi | 2026-09-24 |
 | [0024](0024-automatic-records-without-a-language-model.md) | Dil modeli olmadan otomatik kayıt | Kabul edildi | 2026-09-24 |
+| [0025](0025-collector-every-six-hours.md) | Toplayıcı altı saatte bir çalışır | Kabul edildi | 2026-09-24 |
 
 ## Yeni bir ADR nasıl önerilir?
 
