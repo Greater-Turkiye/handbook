@@ -2,7 +2,7 @@
 
 > **EN:** Amends [0007](0007-human-in-the-loop-publishing.md) for one class of records. Candidates that pass the collector's relevance filter and its safety gates are written to `datasets` as event records automatically, with no person reading them first. They are published as what they are: `assessment.status: unverified`, `credibility: 6` ("cannot be judged"), a bilingual note saying no one reviewed them, machine-written title and summary marked in `i18n.machine`, and the tag `otomatik`. Verification comes later, as a separate pass over that tag. The records live on an `auto-data` branch that the site build lays over `main`, so `main` stays the human-reviewed record. Everything 0007 guards that is not volume stays guarded: nothing about Turkish forces is published automatically, sources graded E or F never feed it, the content-policy validator runs on every record, and a single repository variable stops it.
 
-- **Durum:** Kabul edildi
+- **Durum:** Kabul edildi; dil modeli adımı için [0024](0024-automatic-records-without-a-language-model.md) ile değiştirildi
 - **Tarih:** 2026-09-24
 - **Önerenler:** @nukIeer
 - **İlgili:** [0006](0006-verification-scale.md), [0007](0007-human-in-the-loop-publishing.md) (kısmen değiştirir), [0009](0009-licensing.md), [0010](0010-content-safety-gates.md), [0011](0011-threat-model.md)
