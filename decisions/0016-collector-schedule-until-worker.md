@@ -2,7 +2,7 @@
 
 > **EN:** Amends ADR 0008: until a Cloudflare account exists, collectors run on a GitHub Actions `schedule:` instead of a `workflow_dispatch` triggered by a Worker cron. The 60-day inactivity risk is mitigated by the ledger commit each queuing run makes, and by re-arming with a manual dispatch; when the scheduler Worker exists, the trigger moves back and this ADR is superseded.
 
-- **Durum:** Kabul edildi
+- **Durum:** Kabul edildi; çalışma sıklığı için [0025](0025-collector-every-six-hours.md) ile değiştirildi
 - **Tarih:** 2026-09-16
 
 ## Bağlam
