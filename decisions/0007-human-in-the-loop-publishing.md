@@ -2,7 +2,7 @@
 
 > **EN:** Nothing is published without human approval: gate 1 is private triage in a Telegram reviewer group, gate 2 is public PR review in `datasets`; bulletins are distinct from records; maintainers hold a kill switch; corrections and withdrawals are auto-posted.
 
-- **Durum:** Kabul edildi
+- **Durum:** Kabul edildi; otomatik doğrulanmamış kayıtlar için [0023](0023-automatic-unverified-records.md) ile kısmen değiştirildi
 - **Tarih:** 2026-09-12
 
 ## Bağlam
