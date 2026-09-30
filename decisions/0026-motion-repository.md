@@ -2,7 +2,7 @@
 
 > **EN:** Proposes a fifth repository, `motion`, for an engine that turns sourced records into short video cards automatically — a relief globe, country and alliance highlights, a news card — built to spread on short-video platforms. It is a separate repository because it needs a build step (WebGL shaders, TypeScript) that the site repository deliberately does not have, and because its output is media, not data or the site. The project's rules apply to video unchanged: sourced hooks only, the verification status on screen, nothing about Turkish forces, no targeting views; state arms and alliance emblems appear only in news context, over their subject. Posting to channels automatically would change ADR 0007 and needs its own decision. Proposed; the plan and four design directions are in the repository for the owner's choice.
 
-- **Durum:** Önerildi
+- **Durum:** Kabul edildi
 - **Tarih:** 2026-09-30
 - **Önerenler:** @nukIeer
 - **İlgili:** [0001](0001-repository-boundaries.md), [0007](0007-human-in-the-loop-publishing.md), [0013](0013-map-layers-turkiye-perspective.md), [0023](0023-automatic-unverified-records.md)
