@@ -96,3 +96,9 @@ Handbook content is licensed under [CC BY 4.0](LICENSE). Opening a pull request 
 
 Yapay zeka araclari ve yeni katkicilar icin kisa calisma kurallari: [CLAUDE.md](CLAUDE.md). Bu kurallarin ilki, her degisiklikte README dosyasini ayni PR icinde guncel tutmaktir.
 Short working rules for AI agents and new contributors: [CLAUDE.md](CLAUDE.md). The first of them is keeping the README true in the same pull request as the change.
+
+## Issues
+
+Issues here are worked by Claude Code in GitHub Actions through the org-wide workflow ([Greater-Turkiye/.github](https://github.com/Greater-Turkiye/.github#issues-are-worked-by-claude), called from `.github/workflows/claude.yml`): a new issue is assigned to the owner and resolved end to end; the `claude` label or an `@claude` comment starts it again. Only people with write access can start it.
+
+Buradaki issue'lar GitHub Actions içinde Claude Code tarafından çözülür: yeni issue sahibine atanır ve baştan sona çözülür; `claude` etiketi ya da `@claude` yorumu yeniden başlatır.
